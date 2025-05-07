@@ -12,8 +12,6 @@ public class FileEncrypt{
     private static final String ALGORITHM = "AES";
     private static final String TRANSFORMATION = "AES/CBC/PKCS5Padding";
 
-
-
     // 加密文件
     public static void encryptFile(SecretKey secretKey, byte[] iv, String inputFile, String outputFile) throws Exception {
         Cipher cipher = Cipher.getInstance(TRANSFORMATION);
